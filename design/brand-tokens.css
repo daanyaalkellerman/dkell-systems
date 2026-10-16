@@ -1,0 +1,16 @@
+/* Base brand tokens. Check text contrast for each actual background. */
+:root {
+  --brand-teal: #123C3A;
+  --brand-ivory: #F5F1E8;
+  --brand-sage: #A8BFA3;
+  --brand-lime: #D4E77C;
+  --brand-charcoal: #222927;
+  --color-background: var(--brand-ivory);
+  --color-text: var(--brand-charcoal);
+  --color-action: var(--brand-teal);
+  --font-sans: 'Manrope', Arial, sans-serif;
+  --radius-small: 0.375rem;
+  --radius-panel: 0.75rem;
+  --content-width: 80rem;
+}
+/* Prefer teal or charcoal text on lime/sage. Do not use lime as small text on ivory. */

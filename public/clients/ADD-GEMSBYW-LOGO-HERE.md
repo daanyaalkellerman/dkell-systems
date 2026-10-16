@@ -1,0 +1,1 @@
+Add the genuine Gemsbyw logo as gemsbyw-logo.svg or gemsbyw-logo.png. Do not create a fake brand logo. Until supplied, display Gemsbyw as text. A single client should not autoplay or repeat to imply several clients.

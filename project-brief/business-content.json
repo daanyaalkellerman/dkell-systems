@@ -1,0 +1,68 @@
+{
+  "businessName": "D-Kell Systems",
+  "positioning": "Practical websites and business technology for small businesses.",
+  "audience": "Small businesses in South Africa and internationally, including businesses that currently sell through social media.",
+  "services": [
+    {
+      "slug": "websites",
+      "name": "Websites",
+      "startingPrice": null,
+      "currency": "ZAR"
+    },
+    {
+      "slug": "online-stores",
+      "name": "Online stores",
+      "startingPrice": null,
+      "currency": "ZAR"
+    },
+    {
+      "slug": "admin-platforms",
+      "name": "Admin platforms",
+      "startingPrice": null,
+      "currency": "ZAR"
+    },
+    {
+      "slug": "automation",
+      "name": "Automation",
+      "startingPrice": null,
+      "currency": "ZAR"
+    },
+    {
+      "slug": "booking-systems",
+      "name": "Booking systems",
+      "startingPrice": null,
+      "currency": "ZAR"
+    },
+    {
+      "slug": "business-dashboards",
+      "name": "Business dashboards",
+      "startingPrice": null,
+      "currency": "ZAR"
+    }
+  ],
+  "maintenanceAndSupport": true,
+  "doesNotOffer": [
+    "Social media design",
+    "Social media management"
+  ],
+  "companyPresentation": "Company-led identity; do not imply a large team or centre the website on Daanyaal.",
+  "slogan": null,
+  "contact": {
+    "whatsappDisplay": "+27 68 007 1963",
+    "whatsappUrl": "https://wa.me/27680071963",
+    "instagram": "https://www.instagram.com/dkellsystems/",
+    "emailSupplied": "dkellsystems@gmail.co.za",
+    "emailConfirmed": false
+  },
+  "clients": [
+    {
+      "name": "Gemsbyw",
+      "logoPath": null,
+      "projectDetails": null,
+      "testimonial": null
+    }
+  ],
+  "clientPortal": "Future phase; do not build login now.",
+  "portfolioUrl": "https://daanyaalkellerman.co.za",
+  "businessSiteOrigin": null
+}
