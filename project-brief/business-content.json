@@ -51,8 +51,8 @@
     "whatsappDisplay": "+27 68 007 1963",
     "whatsappUrl": "https://wa.me/27680071963",
     "instagram": "https://www.instagram.com/dkellsystems/",
-    "emailSupplied": "dkellsystems@gmail.co.za",
-    "emailConfirmed": false
+    "emailSupplied": "dkellsystems@gmail.com",
+    "emailConfirmed": true
   },
   "clients": [
     {
@@ -64,5 +64,5 @@
   ],
   "clientPortal": "Future phase; do not build login now.",
   "portfolioUrl": "https://daanyaalkellerman.co.za",
-  "businessSiteOrigin": null
+  "businessSiteOrigin": "https://dkellsystems.web.app"
 }

@@ -1,0 +1,45 @@
+{
+  "name": "dkell-systems",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate && node --env-file-if-exists=.env scripts/postgenerate.mjs",
+    "preview": "node scripts/preview.mjs",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "prettier --write app shared scripts tests *.ts *.mjs README.md docs .github",
+    "format:check": "prettier --check app shared scripts tests *.ts *.mjs README.md docs .github",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "dependencies": {
+    "nuxt": "4.6.1",
+    "vue": "^3.5.0",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.56.0",
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/test-utils": "^2.5.1",
+    "eslint": "^10.13.0",
+    "eslint-plugin-vue": "^10.11.1",
+    "happy-dom": "^21.0.3",
+    "prettier": "^3.9.10",
+    "srvx": "^1.0.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.71.2",
+    "vitest": "^5.0.5",
+    "vue-eslint-parser": "^10.4.1",
+    "vue-tsc": "^3.0.0"
+  }
+}

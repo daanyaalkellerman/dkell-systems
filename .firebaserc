@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "d-kell-systems"
+  },
+  "targets": {
+    "d-kell-systems": {
+      "hosting": {
+        "dkell": [
+          "dkellsystems"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
