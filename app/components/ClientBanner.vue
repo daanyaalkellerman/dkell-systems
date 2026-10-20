@@ -38,8 +38,11 @@ function move(direction: number) {
           </p>
         </div>
         <div v-if="clients.length > 1" class="carousel-controls">
-          <button type="button" aria-label="Previous client" @click="move(-1)">←</button
-          ><button type="button" aria-label="Next client" @click="move(1)">→</button>
+          <button type="button" aria-label="Previous client" @click="move(-1)">
+            <SiteIcon name="arrow-left" /></button
+          ><button type="button" aria-label="Next client" @click="move(1)">
+            <SiteIcon name="arrow-right" />
+          </button>
         </div>
       </div>
     </div>

@@ -56,6 +56,7 @@ Do not rerun `firebase init` over the prepared configuration. Only `.output/publ
 
 Official references:
 
+- [Deployment targets](https://firebase.google.com/docs/cli/targets)
 - [Hosting and default domains](https://firebase.google.com/docs/hosting)
 - [Hosting configuration, static files, custom 404 and trailing slashes](https://firebase.google.com/docs/hosting/full-config)
 - [Hosting usage and quotas](https://firebase.google.com/docs/hosting/usage-quotas-pricing)

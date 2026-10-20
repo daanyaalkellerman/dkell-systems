@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <section class="maintenance-section">
     <RevealBlock class="shell maintenance-layout"
       ><div>
@@ -12,9 +12,8 @@
         </p>
         <p>We will discuss the work, level of support and cost before you commit.</p>
         <NuxtLink to="/contact?service=maintenance" class="text-link"
-          >Discuss ongoing support <span aria-hidden="true">↗</span></NuxtLink
-        >
-      </div></RevealBlock
-    >
+          >Discuss ongoing support <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+        ></NuxtLink></div
+    ></RevealBlock>
   </section>
 </template>

@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { business } from '~/data/business'
 const menuOpen = ref(false)
 const hydrated = ref(false)
@@ -65,13 +65,13 @@ const links = [
         aria-controls="navigation"
         @click="menuOpen = !menuOpen"
       >
-        {{ menuOpen ? 'Close' : 'Menu' }} <span aria-hidden="true">{{ menuOpen ? '−' : '+' }}</span>
+        {{ menuOpen ? 'Close' : 'Menu' }} <SiteIcon :name="menuOpen ? 'close' : 'menu'" />
       </button>
       <nav id="navigation" aria-label="Main navigation" :class="{ open: menuOpen }">
         <NuxtLink v-for="link in links" :key="link.to" :to="link.to">{{ link.label }}</NuxtLink
         ><a :href="business.contact.whatsappUrl" class="button button-small"
-          >WhatsApp enquiry <span aria-hidden="true">↗</span></a
-        >
+          >WhatsApp enquiry <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+        ></a>
       </nav>
     </div>
   </header>

@@ -29,7 +29,9 @@ usePageSeo(
             involved and the cost before committing.
           </p>
         </div>
-        <NuxtLink to="/contact?service=maintenance" class="text-link">Discuss support ↗</NuxtLink>
+        <NuxtLink to="/contact?service=maintenance" class="text-link"
+          >Discuss support <SiteIcon name="arrow-up-right"
+        /></NuxtLink>
       </div>
     </section>
     <ContactCta />

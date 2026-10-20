@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { business } from '~/data/business'
 </script>
 <template>
@@ -12,10 +12,11 @@ import { business } from '~/data/business'
       </p>
       <div class="hero-actions">
         <a :href="business.contact.whatsappUrl" class="button"
-          >Discuss your project <span aria-hidden="true">↗</span></a
+          >Discuss your project
+          <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></a
         ><NuxtLink class="text-link" to="/services"
-          >Explore services <span aria-hidden="true">→</span></NuxtLink
-        >
+          >Explore services <span aria-hidden="true"><SiteIcon name="arrow-right" /></span
+        ></NuxtLink>
       </div>
     </RevealBlock>
     <RevealBlock>
@@ -26,16 +27,17 @@ import { business } from '~/data/business'
         <div class="visual-orbit" aria-hidden="true"></div>
         <div class="concept-window concept-website">
           <div class="window-bar">
-            <span class="window-dots" aria-hidden="true">● ● ●</span
-            ><span>YOUR BUSINESS / WEBSITE</span><span aria-hidden="true">↗</span>
+            <span class="window-dots" aria-hidden="true"><SiteIcon name="dots" /></span
+            ><span>YOUR BUSINESS / WEBSITE</span
+            ><span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span>
           </div>
           <div class="website-content">
             <div>
               <span class="visual-kicker">Your business online</span>
               <h2>Products.<br />Services.<br />Enquiries.</h2>
               <span class="illustrated-button"
-                >Explore the collection <span aria-hidden="true">↗</span></span
-              >
+                >Explore <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+              ></span>
             </div>
             <div class="product-scene" aria-hidden="true">
               <span class="product-arch"></span><span class="product-ring"></span
@@ -50,19 +52,20 @@ import { business } from '~/data/business'
           <span class="visual-kicker">Administration</span>
           <h3>Everything in view.</h3>
           <div class="record-row">
-            <span class="record-icon" aria-hidden="true">▦</span>
+            <span class="record-icon" aria-hidden="true"><SiteIcon name="admin-platforms" /></span>
             <div>Customer records<small>Organised in one place</small></div>
           </div>
           <div class="record-row">
-            <span class="record-icon" aria-hidden="true">↗</span>
+            <span class="record-icon" aria-hidden="true"><SiteIcon name="arrow-up-right" /></span>
             <div>Follow-up tasks<small>Clear next steps</small></div>
           </div>
           <div class="admin-footer">
-            <span>Connected workflows</span><span aria-hidden="true">✓</span>
+            <span>Connected workflows</span
+            ><span aria-hidden="true"><SiteIcon name="check" /></span>
           </div>
         </div>
         <div class="concept-window concept-booking">
-          <span class="booking-icon" aria-hidden="true">◷</span>
+          <span class="booking-icon" aria-hidden="true"><SiteIcon name="booking-systems" /></span>
           <div>
             <span class="visual-kicker">Booking system</span>
             <h3>Choose a time.</h3>

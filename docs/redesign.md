@@ -29,3 +29,11 @@ The browser suite retains the prior meaningful assertions. The duplicated contac
 Final local results: ESLint, Prettier and strict TypeScript checks passed; all 10 unit tests and all 15 browser tests passed. Static generation verified all 12 public routes. Screenshots were captured at 390px, 768px and 1440px, with visual review of the homepage at each size and representative shared pages, including Contact. No Lighthouse score, physical-device test or remote CI run is claimed.
 
 The previously recorded 11 high-severity dependency advisories remain separate in `verification.md`; no dependency or security changes were mixed into this redesign. No Firebase deployment was performed.
+
+## Mobile icon refinement
+
+Text-glyph icons have been replaced with the shared `SiteIcon.vue` inline SVG component. Its paths use `currentColor`, consistent strokes, explicit dimensions and decorative accessibility attributes, preventing platform emoji fonts from changing icon appearance. Service icons are keyed by service slug. No icon font, external library or network request is involved.
+
+Mobile layouts now use consistent icon tiles, a clearer menu control, a full-width primary action, fluid headline sizing and stacked administration rows. Illustration labels are larger. The overlapping decorative store phone is hidden on narrow screens, leaving the collection layout unobstructed. The client screenshot remains non-clickable.
+
+Verified on 20 October 2026: the generated site passed 16 browser tests, with two intentional skips because the narrow-screen test runs only in the mobile project. The initial run encountered loading/interaction timeouts; the subsequent full run passed with unchanged timeout settings. Reviewed mobile hero and service-icon screenshots at 320px, 390px and 540px. Lint, strict TypeScript, formatting and static generation passed. No deployment was performed.

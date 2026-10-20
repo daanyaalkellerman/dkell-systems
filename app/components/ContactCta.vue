@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { business } from '~/data/business'
 withDefaults(defineProps<{ service?: string }>(), { service: '' })
 </script>
@@ -13,12 +13,13 @@ withDefaults(defineProps<{ service?: string }>(), { service: '' })
       </p>
       <div class="hero-actions">
         <a :href="business.contact.whatsappUrl" class="button button-lime"
-          >Discuss it on WhatsApp <span aria-hidden="true">↗</span></a
+          >Discuss it on WhatsApp
+          <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></a
         ><NuxtLink
           :to="service ? { path: '/contact', query: { service } } : '/contact'"
           class="text-link"
-          >Prepare a project enquiry <span aria-hidden="true">→</span></NuxtLink
-        >
+          >Prepare a project enquiry <span aria-hidden="true"><SiteIcon name="arrow-right" /></span
+        ></NuxtLink>
       </div>
       <p class="closing-note">
         You choose when to send. No enquiry is sent automatically.

@@ -1,4 +1,4 @@
-﻿/* Lightweight, illustrative interfaces. Dimensions reserve space before hydration. */
+/* Lightweight, illustrative interfaces. Dimensions reserve space before hydration. */
 .connected-visual {
   position: relative;
   max-width: 1080px;
@@ -39,8 +39,8 @@
   border-bottom: 1px solid var(--line);
 }
 .window-dots {
-  font-size: 7px;
-  letter-spacing: 4px;
+  display: inline-flex;
+  font-size: 18px;
 }
 .website-content {
   display: grid;
@@ -565,7 +565,7 @@
   .connected-visual {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px;
     margin-top: 35px;
     padding: 20px 0 0;
@@ -583,17 +583,16 @@
   }
   .concept-website {
     grid-column: 1/-1;
-    transform: rotate(-2deg);
-    margin: 0 5px 8px;
+    transform: none;
+    margin: 0 0 4px;
   }
   .window-bar {
     padding: 12px;
-    font-size: 7px;
+    font-size: 10px;
     gap: 8px;
   }
   .window-dots {
-    font-size: 5px;
-    letter-spacing: 2px;
+    font-size: 16px;
   }
   .website-content {
     padding: 18px;
@@ -604,10 +603,10 @@
     margin: 12px 0 20px;
   }
   .visual-kicker {
-    font-size: 9px;
+    font-size: 11px;
   }
   .illustrated-button {
-    font-size: 8px;
+    font-size: 11px;
     padding: 9px 10px;
     gap: 10px;
   }
@@ -630,14 +629,14 @@
   }
   .website-bottom {
     padding: 12px 16px;
-    font-size: 8px;
+    font-size: 11px;
   }
   .concept-admin {
     padding: 17px;
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 15px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px 12px;
   }
   .concept-admin > .visual-kicker,
   .concept-admin > h3,
@@ -649,12 +648,12 @@
     margin: 5px 0 10px;
   }
   .record-row {
-    font-size: 10px;
+    font-size: 13px;
     padding-block: 12px;
     gap: 8px;
   }
   .record-row small {
-    font-size: 9px;
+    font-size: 11px;
   }
   .admin-footer {
     padding-top: 8px;
@@ -675,7 +674,8 @@
     flex-shrink: 0;
   }
   .time-options {
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 6px;
     font-size: 10px;
   }
   .time-options span {
@@ -720,11 +720,11 @@
     font-size: 10px;
   }
   .store-visual {
-    min-height: 345px;
-    padding: 18px 26px 50px 0;
+    min-height: 0;
+    padding: 18px 0 0;
   }
   .store-layout .store-visual {
-    padding-right: 26px;
+    padding-right: 0;
   }
   .store-browser-content {
     padding: 18px;
@@ -753,10 +753,14 @@
     width: 34px;
   }
   .catalogue-labels {
-    font-size: 7px;
+    font-size: 10px;
     line-height: 1.4;
   }
+  .store-browser {
+    transform: none;
+  }
   .store-phone {
+    display: none;
     width: 115px;
     border-width: 4px;
     bottom: 53px;
@@ -768,11 +772,11 @@
     height: 80px;
   }
   .store-phone strong {
-    font-size: 8px;
+    font-size: 11px;
     margin: 9px 0;
   }
   .phone-button {
-    font-size: 7px;
+    font-size: 10px;
     margin-top: 9px;
     padding: 7px 5px;
   }
@@ -784,6 +788,8 @@
     margin-bottom: 9px;
   }
   .store-visual figcaption {
+    position: static;
+    margin-top: 16px;
     font-size: 11px;
   }
   .store-copy h3 {

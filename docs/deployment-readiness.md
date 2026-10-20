@@ -1,6 +1,6 @@
 # Deployment readiness: 19 October 2026
 
-Project: `d-kell-systems`. Production origin: `https://dkellsystems.web.app`. Static output: `.output/public`. No deployment performed.
+Project: `d-kell-systems`. Hosting site: `dkellsystems`. Deployment target: `dkell`. Production origin: `https://dkellsystems.web.app`. Static output: `.output/public`. No deployment performed.
 
 ## Dependency review
 
@@ -31,3 +31,7 @@ These packages belong to the Node build/development toolchain. Firebase publishe
 - Browser suite: all 15 tests passed across desktop, tablet and mobile, covering generated routes, contact journeys, navigation, assets, no-JavaScript fallback and responsive layouts.
 
 The build emitted the existing font-resolution/timing diagnostics and a Nitro cache-driver resolution warning. Generation and emulator verification succeeded; the public font is present. These are recorded as build warnings, not hidden test failures. The deployment artifact is the generated static directory, not the temporary prerender server.
+
+## Corrected Hosting target and screenshot follow-up
+
+The final configuration selects target `dkell`, mapped in `.firebaserc` to site `dkellsystems` within project `d-kell-systems`. The production origin is `https://dkellsystems.web.app`. Static generation, lint and formatting passed again. Firebase's local emulator served `hosting[dkell]` from `.output/public`; the verification script passed for the target mapping, all 12 routes, canonical/social metadata, sitemap, robots, screenshot and custom 404 responses. The generated Work page was also checked to retain the screenshot without a click-to-expand link or instruction. The earlier full unit/browser results above were not rerun for this configuration and markup follow-up. No deployment was performed.

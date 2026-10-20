@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { services, clients } from '~/data/business'
 usePageSeo(
   'Websites & business technology',

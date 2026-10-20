@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <section class="store-feature section-space" aria-labelledby="store-title">
     <div class="shell">
       <RevealBlock class="store-heading"
@@ -10,8 +10,9 @@
           ><figure class="store-visual">
             <div class="store-browser">
               <div class="window-bar">
-                <span class="window-dots" aria-hidden="true">● ● ●</span><span>YOUR COLLECTION</span
-                ><span aria-hidden="true">↗</span>
+                <span class="window-dots" aria-hidden="true"><SiteIcon name="dots" /></span
+                ><span>YOUR COLLECTION</span
+                ><span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span>
               </div>
               <div class="store-browser-content">
                 <span class="visual-kicker">Browse. Discover. Enquire.</span>
@@ -34,7 +35,7 @@
               <strong>Product collection</strong>
               <div class="phone-line"></div>
               <div class="phone-line short"></div>
-              <div class="phone-button">View product ↗</div>
+              <div class="phone-button">View product <SiteIcon name="arrow-up-right" /></div>
             </div>
             <figcaption>Illustrative website and store layouts.</figcaption>
           </figure></RevealBlock
@@ -51,12 +52,13 @@
           </p>
           <div class="feature-links">
             <NuxtLink to="/services/websites"
-              >Explore websites <span aria-hidden="true">↗</span></NuxtLink
+              >Explore websites
+              <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></NuxtLink
             ><NuxtLink to="/services/online-stores"
-              >Explore online stores <span aria-hidden="true">↗</span></NuxtLink
-            >
-          </div></RevealBlock
-        >
+              >Explore online stores
+              <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+            ></NuxtLink></div
+        ></RevealBlock>
       </div>
     </div>
   </section>

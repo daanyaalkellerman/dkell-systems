@@ -136,7 +136,7 @@ async function review() {
       /></FormField>
     </div>
     <button class="button button-lime" type="submit" :disabled="!hydrated">
-      Review WhatsApp message <span aria-hidden="true">↗</span>
+      Review WhatsApp message <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span>
     </button>
     <p class="form-note">
       This website does not store form submissions. Opening WhatsApp shares the draft with WhatsApp;
@@ -147,8 +147,8 @@ async function review() {
       <h3>Review your message</h3>
       <pre>{{ buildMessage(form) }}</pre>
       <a :href="enquiryUrl(form)" class="button button-lime"
-        >Open WhatsApp to send <span aria-hidden="true">↗</span></a
-      >
+        >Open WhatsApp to send <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+      ></a>
       <p class="form-note">Nothing has been sent. You can still edit the draft in WhatsApp.</p>
     </div>
   </form>

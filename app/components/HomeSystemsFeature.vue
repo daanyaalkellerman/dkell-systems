@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <section class="systems-feature section-space" aria-labelledby="systems-title">
     <div class="shell feature-split">
       <RevealBlock class="feature-copy"
@@ -10,14 +10,14 @@
         </p>
         <div class="feature-links">
           <NuxtLink to="/services/admin-platforms"
-            >Admin platforms <span aria-hidden="true">↗</span></NuxtLink
+            >Admin platforms
+            <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></NuxtLink
           ><NuxtLink to="/services/automation"
-            >Automation <span aria-hidden="true">↗</span></NuxtLink
+            >Automation <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></NuxtLink
           ><NuxtLink to="/services/business-dashboards"
-            >Business dashboards <span aria-hidden="true">↗</span></NuxtLink
-          >
-        </div></RevealBlock
-      >
+            >Business dashboards <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+          ></NuxtLink></div
+      ></RevealBlock>
       <RevealBlock
         ><figure class="workflow-visual">
           <div class="workflow-top">
@@ -41,7 +41,8 @@
               <h3>Connect the next step</h3>
               <p>Move information between agreed tools</p>
               <div class="workflow-route">
-                <span>Enquiry</span><span aria-hidden="true">→</span><span>Follow-up task</span>
+                <span>Enquiry</span><span aria-hidden="true"><SiteIcon name="arrow-right" /></span
+                ><span>Follow-up task</span>
               </div>
             </div>
           </div>

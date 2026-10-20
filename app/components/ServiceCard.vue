@@ -6,9 +6,7 @@ defineProps<{ service: Service; index: number }>()
   <article class="service-card">
     <div class="service-top">
       <span class="service-number">0{{ index + 1 }}</span
-      ><span class="service-symbol" aria-hidden="true">{{
-        ['↗', '▧', '▦', '⇄', '◷', '▥'][index]
-      }}</span>
+      ><span class="service-symbol"><SiteIcon :name="service.slug" /></span>
     </div>
     <h3>
       <NuxtLink :to="'/services/' + service.slug">{{ service.name }}</NuxtLink>
@@ -22,7 +20,7 @@ defineProps<{ service: Service; index: number }>()
       :to="'/services/' + service.slug"
       class="service-link"
       :aria-label="'Explore ' + service.name.toLowerCase()"
-      >Explore service <span aria-hidden="true">↗</span></NuxtLink
-    >
+      >Explore service <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+    ></NuxtLink>
   </article>
 </template>

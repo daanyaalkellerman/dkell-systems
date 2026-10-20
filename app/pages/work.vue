@@ -19,10 +19,7 @@ usePageSeo(
         <p>A preview of the desktop homepage.</p>
       </div>
       <figure class="project-preview">
-        <a
-          href="/clients/gemsbyw/homepage-desktop.png"
-          aria-label="View the full-size Gemsbyw homepage screenshot"
-        >
+        <div class="project-image">
           <img
             src="/clients/gemsbyw/homepage-desktop.png"
             alt="Desktop homepage with jewellery photography and collection navigation"
@@ -31,10 +28,8 @@ usePageSeo(
             loading="lazy"
             decoding="async"
           />
-        </a>
-        <figcaption>
-          Gemsbyw · Desktop homepage. Select the image to view it at full size.
-        </figcaption>
+        </div>
+        <figcaption>Gemsbyw · Desktop homepage.</figcaption>
       </figure>
     </section>
     <ContactCta />
@@ -45,9 +40,9 @@ usePageSeo(
 .project-preview {
   margin: 0;
 }
-.project-preview a {
+.project-image {
   display: block;
-  border: 1px solid var(--colour-sage, #a8bfa3);
+  border: 1px solid var(--brand-sage);
   border-radius: 16px;
   overflow: hidden;
 }

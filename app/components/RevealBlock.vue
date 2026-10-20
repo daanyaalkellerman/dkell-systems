@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const element = useTemplateRef<HTMLElement>('element')
 let observer: IntersectionObserver | undefined
 onMounted(() => {

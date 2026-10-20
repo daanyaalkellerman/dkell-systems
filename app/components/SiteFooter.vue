@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { business, services } from '~/data/business'
 </script>
 <template>
@@ -32,17 +32,22 @@ import { business, services } from '~/data/business'
         </nav>
         <nav aria-label="Footer contact">
           <h2>Get in touch</h2>
-          <a :href="business.contact.whatsappUrl">WhatsApp <span aria-hidden="true">↗</span></a
+          <a :href="business.contact.whatsappUrl"
+            >WhatsApp <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span></a
           ><a
             v-if="business.contact.emailConfirmed"
             :href="'mailto:' + business.contact.emailSupplied"
             >{{ business.contact.emailSupplied }}</a
-          ><a :href="business.contact.instagram">Instagram <span aria-hidden="true">↗</span></a>
+          ><a :href="business.contact.instagram"
+            >Instagram <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+          ></a>
         </nav>
       </div>
       <div class="footer-bottom">
         <p>© {{ new Date().getFullYear() }} D-Kell Systems</p>
-        <a href="#main">Back to top <span aria-hidden="true">↑</span></a>
+        <a href="#main"
+          >Back to top <span aria-hidden="true"><SiteIcon name="arrow-up" /></span
+        ></a>
       </div>
     </div>
   </footer>

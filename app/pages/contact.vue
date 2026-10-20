@@ -25,15 +25,17 @@ usePageSeo(
             :href="business.contact.whatsappUrl"
             class="phone-link"
             aria-label="Chat directly on WhatsApp"
-            >{{ business.contact.whatsappDisplay }} ↗</a
-          >
+            >{{ business.contact.whatsappDisplay }} <SiteIcon name="arrow-up-right"
+          /></a>
           <p class="contact-small">You review and send the message yourself.</p>
           <a
             v-if="business.contact.emailConfirmed"
             :href="'mailto:' + business.contact.emailSupplied"
             class="social-link"
             >{{ business.contact.emailSupplied }}</a
-          ><a :href="business.contact.instagram" class="social-link">Instagram ↗</a>
+          ><a :href="business.contact.instagram" class="social-link"
+            >Instagram <SiteIcon name="arrow-up-right"
+          /></a>
         </div>
         <EnquiryForm />
       </div>

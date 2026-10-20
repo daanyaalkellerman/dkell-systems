@@ -174,3 +174,34 @@ test('shared layouts, reduced motion and observer fallback remain readable', asy
       .getByRole('link', { name: 'WhatsApp', exact: false }),
   ).toHaveAttribute('href', 'https://wa.me/27680071963')
 })
+
+test('mobile SVG icons and illustrations fit narrow screens', async ({ page }, testInfo) => {
+  test.skip(
+    testInfo.project.name !== 'mobile',
+    'Narrow-width checks run once in the mobile project',
+  )
+  for (const width of [320, 390, 540]) {
+    await page.setViewportSize({ width, height: 844 })
+    await page.emulateMedia({ reducedMotion: 'reduce' })
+    await page.goto('/')
+    await page.evaluate(() => document.fonts.ready)
+    await page.locator('.hero').screenshot({ path: `test-results/mobile-hero-${width}.png` })
+    await page
+      .locator('.service-card')
+      .first()
+      .screenshot({ path: `test-results/mobile-service-${width}.png` })
+    const icons = page.locator('.service-symbol svg')
+    await expect(icons).toHaveCount(6)
+    for (const icon of await icons.all()) {
+      await expect(icon).toHaveAttribute('stroke', 'currentColor')
+      await expect(icon).toHaveAttribute('aria-hidden', 'true')
+      expect(await icon.evaluate((el) => el.getBoundingClientRect().width)).toBeGreaterThan(20)
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+    await page.screenshot({
+      path: `test-results/mobile-icons-${width}.png`,
+      fullPage: true,
+      scale: 'css',
+    })
+  }
+})

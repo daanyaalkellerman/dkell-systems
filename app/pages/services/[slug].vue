@@ -13,7 +13,9 @@ usePageSeo(
     <PageIntro eyebrow="Services" :title="service.name" :description="service.description" />
     <section class="shell service-detail section-bottom">
       <div>
-        <NuxtLink to="/services" class="text-link">← All services</NuxtLink>
+        <NuxtLink to="/services" class="text-link"
+          ><SiteIcon name="arrow-left" /> All services</NuxtLink
+        >
         <h2>What we can help with</h2>
         <ul class="detail-list">
           <li v-for="(example, index) in service.examples" :key="example">
@@ -38,8 +40,9 @@ usePageSeo(
           published until it is confirmed.
         </p>
         <NuxtLink :to="{ path: '/contact', query: { service: service.slug } }" class="button"
-          >Discuss {{ service.name.toLowerCase() }} <span aria-hidden="true">↗</span></NuxtLink
-        >
+          >Discuss {{ service.name.toLowerCase() }}
+          <span aria-hidden="true"><SiteIcon name="arrow-up-right" /></span
+        ></NuxtLink>
         <p class="small-copy">Maintenance and support can be arranged separately.</p>
       </aside>
     </section>

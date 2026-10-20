@@ -17,9 +17,9 @@ useHead({
         touch for help.
       </p>
       <div class="flex flex-wrap gap-5">
-        <a href="/" class="button">Back to home ↗</a
-        ><a href="/services" class="text-link">Explore services →</a
-        ><a href="/contact" class="text-link">Contact us →</a>
+        <a href="/" class="button">Back to home <SiteIcon name="arrow-up-right" /></a
+        ><a href="/services" class="text-link">Explore services <SiteIcon name="arrow-right" /></a
+        ><a href="/contact" class="text-link">Contact us <SiteIcon name="arrow-right" /></a>
       </div>
     </main>
     <SiteFooter />
